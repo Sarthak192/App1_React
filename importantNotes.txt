@@ -1,0 +1,33 @@
+**************************************************************************************
+Noraml JS -------------------
+const element = (
+  		<div>
+  			<h1 className = "a">Hello World</h1>
+    	</div>
+  		)
+
+Babel --------------
+const element = React.createElement("div", null, React.createElement("h1", {
+  className: "a"
+}, "Hello World"));
+
+**************************************************************************************
+We can also run npm run eject in order to add all dependencies and add config folder of node_modules and the command is :
+npm run eject
+
+**************************************************************************************
+var is global/function scope
+let is block scope
+const is that we cannot assign to other value
+
+**************************************************************************************
+Depending upon the method we call inside the object this functionality changes, if we call method using object then this will return that object
+otherwise if we call the method as standalone then it will return window object which is undefined in this case as we are in 'strict' mode
+
+**************************************************************************************
+If we want to call the method of object as standalone then we have to use the bind property or use arrow function.
+
+**************************************************************************************
+named export -----------------> import {} from '';
+default export -----------------> import __ from '';
+
